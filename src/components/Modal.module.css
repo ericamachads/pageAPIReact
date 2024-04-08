@@ -1,0 +1,45 @@
+.outsiteModal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+.modal {
+  background: #fff;
+  padding: var(--gap);
+  margin: calc(var(--gap) + 4px);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.modal button{
+  margin: var(--gap);
+}
+.closeModal{
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--cor5);
+  border-radius: 50%;
+  border: 2px solid var(--cor3);
+  box-shadow: 0px 0px 0px 2px var(--cor5);
+  background: var(--cor1);
+  position: absolute;
+  top:calc(-0.5*(3rem + var(--gap)));
+  right: calc(-0.5*(3rem + var(--gap)));
+  cursor: pointer;
+}
+.closeModal:hover{
+  box-shadow: 0px 0px 3px 3px var(--cor6);
+  color: var(--cor6);
+}

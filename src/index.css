@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;600&display=swap');
+html{
+  --cor1:#f3f1ff;
+  --cor2: #bea6ff;
+  --cor3: #9f75ff;
+  --cor4:#7916ff;
+  --cor5: #6212c5;
+  --cor6:#2c0076;
+  --gap:1rem;
+}
+*{
+  box-sizing: border-box;
+}
+body,nav,a, button,div, input, textarea{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: "Sora", sans-serif;
+}
+input,textarea{
+  display: block;
+}
+a{
+  text-decoration: none;
+  font-family: inherit;
+}
+body{
+  background-color: var(--cor1);
+}
+header{
+  background-color: var(--cor2);
+}
+.footer{
+  background-color: var(--cor4);
+  padding: var(--gap);
+  margin-top: var(--gap);
+  text-align: center;
+  color:var(--cor1);
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--gap);
+}
+.button{
+  padding: var(--gap) calc(var(--gap)*2);
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.mainButton{
+  background: linear-gradient(var(--cor4), var(--cor3));
+  color: var(--cor1);
+}
+.mainButton:hover{
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+}
+.primary{
+  background: var(--cor4);
+  color: var(--cor1);
+  transition: transform 0.1s ease-in-out;
+}
+.secondary{
+  background: transparent;
+  border: 1px solid var(--cor4);
+  color: var(--cor4);
+  transition: transform 0.1s ease-in-out;
+}
+
+.primary:hover,.secondary:hover{
+  transform: scale(1.1);
+}
+
+.animateRight{
+  opacity: 0;
+  transform: translateX(20px);
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;;
+}
+.animateLeft{
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;;
+}
+.showAnimation{
+  opacity: 1;
+  transform: translateX(0px);
+}
+.products-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:var(--gap);
+}
+.product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.product img {
+  border-radius: .5rem;
+}

@@ -1,0 +1,33 @@
+.content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:calc(var(--gap)*2);
+  align-items: center;
+  height: 95vh;
+}
+.leftContent h1{
+  font-weight: 600;
+  font-size: 3rem;
+  color:var(--cor4);
+}
+.leftContent p{
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.leftContent div{
+  display: flex;
+  justify-content: center;
+}
+.leftContent div button{
+  margin: var(--gap);
+}
+@media (max-width:990px){
+  .content{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .leftContent p{
+    font-size: 1.3rem;
+  }
+}
+

@@ -1,0 +1,38 @@
+.rightContent{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}
+.rightContent h1{
+  grid-column:1/-1;
+  color:var(--cor3);
+  text-transform: capitalize;
+}
+.rightContent textarea,.rightContent input{
+  padding: var(--gap);
+  border-radius: 0.5rem;
+  border: 1px solid var(--cor3);
+  font-family: "Sora", sans-serif;
+  font-size: 1rem;
+  color:var(--cor5);
+}
+
+.rightContent textarea{
+  grid-column:1/-1;
+}
+
+.rightContent textarea:hover,.rightContent input:hover,.rightContent textarea:focus,.rightContent input:focus{
+  border: 1px solid var(--cor4);
+  box-shadow: 0px 0px 5px 1px var(--cor3);
+}
+
+.rightContent button{
+  grid-column: 2;
+  margin-bottom: var(--gap);
+}
+@media (max-width:520px){
+  .rightContent{
+    display: flex;
+    flex-direction: column;
+  }
+}
